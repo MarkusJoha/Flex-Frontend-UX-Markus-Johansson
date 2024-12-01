@@ -1,0 +1,45 @@
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: grey !important;
+    }
+}
+
+.nav {
+    background-color: black;
+}
+
+.c-item {
+    height: 480px;
+}
+
+.c-img { 
+    height: 100%;
+    object-fit: contain;
+}
+
+.c-img:hover {
+    filter: brightness(0.6);
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
+
+.container{
+    padding-bottom: 30px;
+}
+
+footer {
+    background-color: black;
+}
+
+.icon-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+.f-icon {
+    color: aliceblue;
+}

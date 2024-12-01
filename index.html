@@ -1,13 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <title>New Restaurant</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="#" type="image/x-icon">
+  <link rel="stylesheet" href="/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script defer src="https://kit.fontawesome.com/683bc964e2.js" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <title>New Restaurant</title>
 </head>
+
 <body>
-    
+
+<nav class="navbar navbar-expand-lg bg-black">
+  <div class="container-fluid">
+    <h4 class="navbar-brand text-white">Burger Donalds</h4>
+    <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Lunch Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active c-item">
+        <img src="./img/Bacon King.png" class="d-block w-100 c-img" alt="...">
+      </div>
+      <div class="carousel-item c-item">
+        <img src="./img/Big King XL.png" class="d-block w-100 c-img" alt="...">
+      </div>
+      <div class="carousel-item c-item">
+        <img src="./img/Chicken Royale.png" class="d-block w-100 c-img" alt="...">
+      </div>
+      <div class="carousel-item c-item">
+        <img src="./img/Crispy Chicken.png" class="d-block w-100 c-img" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+  <div class="container">
+    <div class="container my-5">
+      <h1 class="text-center mb-4">Responsive Product Cards</h1>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <picture>
+              <source srcset="/img/Bacon King.png" media="(max-width: 600px)">
+              <source srcset="/img/Bacon King.png" media="(max-width: 1200px)">
+              <img src="/img/Bacon King.png" class="card-img-top" alt="Product 1">
+            </picture>
+            <div class="card-body">
+              <h5 class="card-title">Bacon Rook</h5>
+              <p class="card-text">Short description for product 1.</p>
+              <h6>Price: 150 sek</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <picture>
+              <source srcset="/img/Big King XL.png" media="(max-width: 600px)">
+              <source srcset="/img/Big King XL.png" media="(max-width: 1200px)">
+              <img src="/img/Big King XL.png" class="card-img-top" alt="Product 2">
+            </picture>
+            <div class="card-body">
+              <h5 class="card-title">Big Queen XL</h5>
+              <p class="card-text">Short description for product 2.</p>
+              <h6>Price: 150 sek</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <picture>
+              <source srcset="/img/Chicken Royale.png" media="(max-width: 600px)">
+              <source srcset="/img/Chicken Royale.png" media="(max-width: 1200px)">
+              <img src="/img/Chicken Royale.png" class="card-img-top" alt="Product 3">
+            </picture>
+            <div class="card-body">
+              <h5 class="card-title">Chicken Royalty</h5>
+              <p class="card-text">Short description for product 3.</p>
+              <h6>Price: 150 sek</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <picture>
+              <source srcset="/img/Crispy Chicken.png" media="(max-width: 600px)">
+              <source srcset="/img/Crispy Chicken.png" media="(max-width: 1200px)">
+              <img src="/img/Crispy Chicken.png" class="card-img-top" alt="Product 4">
+            </picture>
+            <div class="card-body">
+              <h5 class="card-title">Fried Chicken</h5>
+              <p class="card-text">Short description for product 4.</p>
+              <h6>Price: 150 sek</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <footer class="fixed-bottom">
+    <div class="container text-center">
+      <p class="mb-0 text-white">&copy; 2024 Burger Donalds. All rights reserved.</p>
+      <p class="text-white">Follow us on:
+        <a href="#" class="text-white me-2"><i class="bi bi-facebook fa-brands fa-facebook"></i> Facebook,</a>
+        <a href="#" class="text-white"><i class="bi bi-twitter fa-brands fa-square-x-twitter"></i> X,</a>
+        <a href="#" class="text-white"><i class="bi bi-instagram fa-brands fa-instagram"></i> Instagram</a>
+      </p>
+    </div>
+  </footer>
+
 </body>
+
 </html>
